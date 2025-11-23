@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  backend:
+    image: Subhadeep/flask-backend
+    build: ./backend
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+
+  frontend:
+    image: Subhadeep/react-frontend
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:

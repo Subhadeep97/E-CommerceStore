@@ -1,8 +1,3 @@
-# 🚀 Flask CI/CD Pipeline with GitHub Actions and AWS EC2
-
-This project demonstrates how to set up a complete CI/CD pipeline for a Flask application using  **Docker**, **Terraform**, and **AWS EC2**. It automates testing, containerization, image pushing, and deployment to an EC2 instance every time you push to the `main` branch.
-
----
 
 ## Overview
 
